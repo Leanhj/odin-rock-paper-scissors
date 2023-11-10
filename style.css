@@ -1,0 +1,110 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #F1EB90;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.title {
+    display: flex;
+    background-color: #F3B664;
+    padding: 8px;
+    border-radius: 8px;
+    width: 512px;
+    justify-content: center;
+}
+
+h1 {
+    padding: 8px;
+}
+
+.choices {
+    display: flex;
+    background-color: #F3B664;
+    gap: 16px;
+    padding: 8px;
+    width: 512px;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+button {
+    background-color: #F1EB90;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.game-info {
+    background-color: #F3B664;
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+    gap: 16px;
+}
+
+.game-info * {
+    font-size: 20px;
+}
+
+.choice-info {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.info-result {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+.scores {
+    display: flex;
+    background-color: #F3B664;
+    gap: 16px;
+    border-radius: 8px;
+    width: 512px;
+    justify-content: center;
+    padding: 8px;
+}
+
+.wins, .draws, .losses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: black;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.wins {
+    color: #9FBB73;
+}
+
+.draws {
+    color: #F1EB90;
+}
+
+.losses {
+    color: #EC8F5E;
+}
