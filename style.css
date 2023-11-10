@@ -95,6 +95,7 @@ button {
     background-color: black;
     border-radius: 8px;
     padding: 8px;
+    width: 128px;
 }
 
 .wins {
@@ -107,4 +108,14 @@ button {
 
 .losses {
     color: #EC8F5E;
+}
+
+.final-result {
+    background-color: black;
+    width: 512px;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
 }
