@@ -117,45 +117,42 @@ const paperButton = document.querySelector(".paper");
 const scissorsButton = document.querySelector(".scissors");
 
 rockButton.addEventListener("click", () => {
-    if (rounds <= 5) {
-        rounds++;
+    if (wins <= 5 || losses <= 5) {
         playerChoice = "rock";
         computerChoice = getComputerChoice();
         printChoices(playerChoice, computerChoice);
         let result = playRound(playerChoice, computerChoice);
         printResult(result);
         updateScores();
-        if (rounds === 5) {
+        if (wins === 5 || losses === 5) {
             addFinalResult();
         }
     }
 });
 
 paperButton.addEventListener("click", () => {
-    if (rounds <= 5) {
-        rounds++;
+    if (wins <= 5 || losses <= 5) {
         playerChoice = "paper";
         computerChoice = getComputerChoice();
         printChoices(playerChoice, computerChoice);
         let result = playRound(playerChoice, computerChoice);
         printResult(result);
         updateScores();
-        if (rounds === 5) {
+        if (wins === 5 || losses === 5) {
             addFinalResult();
         }
     }
 });
 
 scissorsButton.addEventListener("click", () => {
-    if (rounds <= 5) {
-        rounds++;
+    if (wins <= 5 || losses <= 5) {
         playerChoice = "scissors";
         computerChoice = getComputerChoice();
         printChoices(playerChoice, computerChoice);
         let result = playRound(playerChoice, computerChoice);
         printResult(result);
         updateScores();
-        if (rounds === 5) {
+        if (wins === 5 || losses === 5) {
             addFinalResult();
         }
     }
